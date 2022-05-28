@@ -1,0 +1,98 @@
+/ VARIABLES
+// https://bulma.io/documentation/customize/variables/
+
+// Colors
+// ============================= */
+
+// Greyscale
+$black:         #1C1C1C;
+$grey-darker:   #4C4064;
+$grey-dark:     #505050;
+$grey:          #B9B3C1;
+$grey-light:    #E5E5E5;
+$grey-lighter:  #F3F2F5;
+$grey-lightest: #FAF9FC;
+$grey-medium: 	#A6A6A6;
+$white:         #FFFFFF;
+
+// Brand Main Colors
+$brand-one:     #DC282C;
+$brand-two:     #02C39D;
+
+// Brand Accent Colors
+$info:          #1C49E8;
+$success:       #4DD1D4;
+$warning:       #FFB802;
+$danger:        #FF008D;
+
+// Primary & Secondary
+$primary: $brand-one;
+$secondary: $brand-two;
+
+
+//  Type
+// ============================= */
+
+$family-sans-serif: "itc-avant-garde-gothic-pro", "Helvetica", "Arial", sans-serif;
+$font-body: "Helvetica", arial, sans-serif;
+// $family-primary: $family-sans-serif;
+// $family-secondary: $family-sans-serif;
+
+// Sizes
+$body-size: 16px;
+$body-color: $black;
+$highlight: $primary;
+
+$display: 6rem;       // 96px
+$size-1: 3rem; // 48px
+$size-2: 2.25rem; // 36px
+$size-3: 1.5rem; // 24px
+$size-4: 1.25rem; // 20px
+$size-5: 1.125rem; // 18px
+$size-6: 1rem;  // 16px font body size
+$size-7: 0.875rem; // 14px
+$size-8: 0.75rem; // 12px
+$size-9: 0.675rem; // 11-10px
+
+
+// Weights
+$weight-thin:       100;
+$weight-extralight: 200;
+$weight-light:      300;
+$weight-regular:    400;
+$weight-semibold:   600;
+$weight-bold:       700;
+$weight-black:      900;
+
+// Letter Spacing
+$letter-spacing-1: 0.1em; // 10%
+$letter-spacing-2: 0.2em; // 20%
+$letter-spacing-3: 0.3em; // 30%
+
+
+//  Sizes
+// ============================= */
+
+// Spacer
+$space-xs:  8px;
+$space-sm:  16px;
+$space-md:  24px;
+$space-lg:  32px;
+$space-xl:  40px;
+$space-xxl: 48px;
+
+// Responsive - https://bulma.io/documentation/overview/responsiveness/
+$gap: $space-md;
+$tablet: 577px;
+$desktop: 769px;
+$widescreen: 1025px;
+$fullhd: 1345px;
+$widescreen-enabled: true;
+$fullhd-enabled: true;
+// @include desktop { ... }
+
+// Border Radius
+$radius-small: $space-xs;
+$radius: $space-xs * 1.5;
+$radius-large: $space-sm;
+$radius-extra-large: $space-md;
