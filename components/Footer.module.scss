@@ -1,0 +1,12 @@
+.mainFooter {
+  background-color: #DEE;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.copyright {
+  font-size: $size-8;
+}
