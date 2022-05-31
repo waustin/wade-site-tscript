@@ -2,9 +2,18 @@ import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 import Layout from '../layouts/Layout';
 
-function MyApp({ Component, pageProps }: AppProps) {
+function parseRouteClass(pathname:string ):string {
+  let routeClass = pathname.replace('/', '-');
+  if(routeClass == '-') {
+    routeClass = '-home';
+  }
+  return `route-${routeClass}`;
+}
+function MyApp({ Component, pageProps, router }: AppProps) {
+  const routeClass = parseRouteClass(router.pathname)
   return (
-    <Layout>
+    <Layout routeClass={routeClass}>
+      <p>Router Path: [{routeClass}] - {router.asPath} - {router.route} </p>
       <Component {...pageProps} />
     </Layout>
   );

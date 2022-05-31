@@ -4,7 +4,7 @@ import styles from './Header.module.scss'
 
 function Header() {
   return (
-    <header className={styles["main-header"]}>
+    <header className={`section ${styles['main-header']}`}>
       <nav className={styles["main-nav"]}>
         <Link href="/">
           <a>Home</a>

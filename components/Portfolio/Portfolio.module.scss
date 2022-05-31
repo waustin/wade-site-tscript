@@ -1,0 +1,16 @@
+.portfolio-list {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+.portfolio-preview {
+  padding: 0;
+  overflow: hidden;
+  border-radius: $radius;
+  box-shadow: 0 0 4px $green-lightest,
+              0 0 10px rgba($green-lightest, 0.2);
+  display: flex;
+  img {
+    object-fit: cover;
+  }
+}

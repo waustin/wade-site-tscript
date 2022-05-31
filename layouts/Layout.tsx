@@ -3,15 +3,16 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 type Props = {
+  routeClass?: string;
   children: ReactNode;
 };
 
 
-function Layout({children}: Props) {
+function Layout({routeClass, children}: Props) {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main className={routeClass}>{children}</main>
       <Footer />
     </>
   )
