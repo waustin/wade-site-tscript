@@ -1,8 +1,10 @@
 .portfolio-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 2fr));
-  grid-template-rows: masonry;
-  gap: 1.5rem;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+  @include below($desktop) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .portfolio-preview {
   padding: 0;
@@ -13,5 +15,6 @@
   display: flex;
   img {
     object-fit: cover;
+    width: 100%;
   }
 }

@@ -16,6 +16,9 @@ const PortfolioList = (props: Props) => {
       <PortfolioPreview />
       <PortfolioPreview />
       <PortfolioPreview />
+      <PortfolioPreview />
+      <PortfolioPreview />
+      <PortfolioPreview />
     </section>
   );
 }
