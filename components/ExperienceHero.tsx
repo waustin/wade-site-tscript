@@ -3,6 +3,7 @@ import styles from './ExperienceHero.module.scss';
 import { motion } from "framer-motion";
 
 type Props = {
+  title: string,
   words: string[];
 }
 
@@ -23,7 +24,7 @@ const ExperienceHero = (props: Props) => {
 
   return (
     <div className={styles.experienceHero}>
-      <h3>Experience:</h3>
+      <h3>{props.title}</h3>
       <motion.div
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}

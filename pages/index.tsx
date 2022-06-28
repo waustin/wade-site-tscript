@@ -7,7 +7,7 @@ import styles from '../styles/pages/Home.module.scss'
 
 const Home: NextPage = () => {
   const experiences = [
-     "Javascript",
+      "Javascript",
       "Vue",
       "React",
       "Next",
@@ -17,6 +17,10 @@ const Home: NextPage = () => {
       "Wordpress",
       "Python",
       "Django",
+      "Postgres",
+      "MySQL",
+      "HTML",
+      "CSS/SASS"
   ];
   return (
     <div className={styles.homePage}>
@@ -30,13 +34,16 @@ const Home: NextPage = () => {
         <div className="columns">
           <div className="column is-three-quarters">
             <h1 className={styles.title}>Wade Austin</h1>
-            <h2 className={styles.tagLine}>Director of Development</h2>
+            <h2 className={styles.tagLine}>Software Developer</h2>
+            <h2 className={styles.tagLine}>
+              Currently: Director of Development @ <a href="http://few.io" target="_blank">Few</a>
+            </h2>
             <div>
               <img src="https://www.amazon.com/photos/shared/C0tjmL99RQWigB6t4gVOzA.CGObH0WSHMNDO4PU1Z7m4j" />
             </div>
           </div>
           <div className="column">
-            <ExperienceHero words={experiences} />
+            <ExperienceHero title="Experience With:" words={experiences} />
           </div>
         </div>
       </main>
