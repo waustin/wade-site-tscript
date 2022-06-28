@@ -1,12 +1,19 @@
 .main-header {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  background-color: $green;
+  color: white;
+  a {
+    color: white;
+  }
 }
 .main-nav {
   display: flex;
+  justify-content: flex-end;
   a {
     display: block;
     padding: 0.5rem 0.5rem;
     font-size: 1.1rem;
+    font-weight: bold;
   }
 }

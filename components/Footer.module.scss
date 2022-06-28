@@ -1,11 +1,23 @@
 .mainFooter {
-  background-color: #DEE;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  background: linear-gradient($green 70%, darken($green, 5%));
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.footerNav {
+  display: flex;
+  margin-bottom: 2rem;
+  font-size: $size-5;
+  a {
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 0.25rem;
+  }
 }
 .copyright {
   font-size: $size-8;

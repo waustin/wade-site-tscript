@@ -13,7 +13,6 @@ function MyApp({ Component, pageProps, router }: AppProps) {
   const routeClass = parseRouteClass(router.pathname)
   return (
     <Layout routeClass={routeClass}>
-      <p>Router Path: [{routeClass}] - {router.asPath} - {router.route} </p>
       <Component {...pageProps} />
     </Layout>
   );
