@@ -19,6 +19,16 @@
     padding: 0.5rem 0.25rem;
   }
 }
+
+.builtWith {
+  font-size: $size-5;
+  span {
+    text-transform: lowercase;
+    font-size: 90%;
+    margin-right: 0.25rem;
+  }
+}
+
 .copyright {
   font-size: $size-8;
 }
